@@ -1,0 +1,30 @@
+{
+  "name": "gulp-web-component-shards",
+  "version": "1.0.0",
+  "description": "Gulp plugin for web-component-shards",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Collaborne/gulp-web-component-shards.git"
+  },
+  "keywords": [
+    "webcomponents",
+    "polymer",
+    "gulpplugin",
+    "web-component-shards",
+    "gulp-web-component-shards"
+  ],
+  "author": "Collaborne B.V. <http://github.com/Collaborne/>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/Collaborne/gulp-web-component-shards/issues"
+  },
+  "homepage": "https://github.com/Collaborne/gulp-web-component-shards#readme",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "web-component-shards": "^1.1.3"
+  }
+}
