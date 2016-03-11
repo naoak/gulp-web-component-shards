@@ -19,7 +19,7 @@ gulp.task('shards', function() {
 		bower_components: 'bower_components',
 		work: '.tmp/web-component-shards'
 	}))
-        .pipe(gulp.dest('dist'));
+	.pipe(gulp.dest('dist'));
 });
 ```
 
@@ -29,11 +29,11 @@ considers the file names.
 
 ### Options
 
-`root`: The root directory of the application, paths in imports are assumed to be relative to that. Defaults to the current directory.
-`shared`: The (relative-to-root) path for the shared import file, defaults to `shared.html`
-`threshold`: The sharing threshold.
-`bower_components`: The bower_components directory, relative to `root`. Defaults to `bower_components`.
-`work`: A work directory for the plugin, defaults to `.tmp/web-component-shards`.
+- `root`: The root directory of the application, paths in imports are assumed to be relative to that. Defaults to the current directory.
+- `shared`: The (relative-to-root) path for the shared import file, defaults to `shared.html`
+- `threshold`: The sharing threshold.
+- `bower_components`: The bower_components directory, relative to `root`. Defaults to `bower_components`.
+- `work`: A work directory for the plugin, defaults to `.tmp/web-component-shards`.
 
 ## License
 
