@@ -13,6 +13,7 @@ var util = require('util');
  * @property {string} work
  * @property {string} shared
  * @property {string} treshold
+ * @property {string} [depReport] file name for a dependency report (JSON)
  */
 
 function WebComponentShardsStream(options) {
@@ -60,7 +61,8 @@ module.exports = function(opts) {
 		shared_import: config.shared || 'shared.html',
 		sharing_threshold: config.treshold || 2,
 		dest_dir: path.resolve(work, 'dist'),
-		workdir: path.resolve(work, 'tmp')
+		workdir: path.resolve(work, 'tmp'),
+		depReport: config.depReport ? path.resolve(process.cwd(), config.depReport) : undefined
 	};
 	// Collect all input files into endpoints, run the tool, and return new vinyl instances for the produced output.
 	// XXX: for now this doesn't handle situations where the contents of the files matters, rather we assume here
