@@ -12,7 +12,7 @@ var util = require('util');
  * @property {string} bower_components
  * @property {string} work
  * @property {string} shared
- * @property {string} treshold
+ * @property {string} threshold
  * @property {string} [depReport] file name for a dependency report (JSON)
  */
 
@@ -59,7 +59,7 @@ module.exports = function(opts) {
 		root: config.root || process.cwd(),
 		bowerdir: config.bower_components || 'bower_components',
 		shared_import: config.shared || 'shared.html',
-		sharing_threshold: config.treshold || 2,
+		sharing_threshold: config.threshold || 2,
 		dest_dir: path.resolve(work, 'dist'),
 		workdir: path.resolve(work, 'tmp'),
 		depReport: config.depReport ? path.resolve(process.cwd(), config.depReport) : undefined
