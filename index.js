@@ -62,7 +62,8 @@ module.exports = function(opts) {
 		sharing_threshold: config.threshold || 2,
 		dest_dir: path.resolve(work, 'dist'),
 		workdir: path.resolve(work, 'tmp'),
-		depReport: config.depReport ? path.resolve(process.cwd(), config.depReport) : undefined
+		depReport: config.depReport ? path.resolve(process.cwd(), config.depReport) : undefined,
+		stripExcludes: config.stripExcludes || [];
 	};
 	// Collect all input files into endpoints, run the tool, and return new vinyl instances for the produced output.
 	// XXX: for now this doesn't handle situations where the contents of the files matters, rather we assume here
